@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace task_3
+namespace task_5
 {
     class Program
     {
@@ -14,24 +14,28 @@ namespace task_3
             int number = int.Parse(userInput);
 
             //int.TryParse(userInput, out  int number);
-            int i = 1;
+            int i = 0;
+            int f = 1;
             int evenSum = 0;
             int oddSum = 0;
+            if (number < 0)
+            {
+                f = -1;
+            }
             do
             {
                 if (i % 2 == 0)
                     evenSum += i;
-                 else
+                else
                     oddSum += i;
 
                 i++;
             }
-            while (i <= number);
+            while (i <= number * f);
 
-            Console.WriteLine($"Parillisten lukujen summa = {evenSum} ja parittomien lukujen summa = {oddSum}");
+            Console.WriteLine($"Parillisten lukujen summa = {evenSum * f} ja parittomien lukujen summa = {oddSum * f}");
 
             Console.ReadKey();
         }
-            
     }
 }
