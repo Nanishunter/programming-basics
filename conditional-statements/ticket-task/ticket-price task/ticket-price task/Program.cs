@@ -8,7 +8,7 @@ namespace ticket_price_task
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Console.WriteLine("Syota ikasi: ");
+            Console.WriteLine("Syötä ikäsi: ");
             String userInput;
             userInput = Console.ReadLine();
             int age;

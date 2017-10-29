@@ -17,14 +17,14 @@ namespace task_1
         static string Tulostus(int luku)
         {
             char merkki = '*';
-            string tahdet;
-            tahdet = "";
+            string star;
+            star = "";
 
             for (int i = 1; i <= luku; i++)
             {
-                tahdet = tahdet + merkki;
+                star = star + merkki;
             }
-            return tahdet;
+            return star;
         }
     }
 }
